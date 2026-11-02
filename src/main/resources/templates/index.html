@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncia Digital | Direitos Humanos no Universo Digital</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <span>🛡️</span> Denúncia Digital
+        </div>
+        <nav>
+            <a th:href="@{/}">Início</a>
+            <a th:href="@{/denuncia}">Denunciar</a>
+            <a th:href="@{/dashboard}">Dashboard</a>
+            <a th:href="@{/info}">Direitos</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Proteja seus direitos no ambiente digital</h1>
+        <p>
+            Registre de forma 100% anônima violações de direitos humanos online
+            e ajude a construir um internet mais segura e justa.
+        </p>
+        <div class="botoes">
+            <a th:href="@{/denuncia}" class="botao principal">Fazer Denúncia Anônima</a>
+            <a th:href="@{/dashboard}" class="botao secundario">Ver Dashboard</a>
+        </div>
+    </div>
+</section>
+
+<section class="secao">
+    <div class="container">
+        <div class="secao-titulo">
+            <h2>Como funciona</h2>
+            <p>Uma ferramenta simples, segura e alinhada ao ODS 16</p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-icone">🔒</div>
+                <h3>100% Anônimo</h3>
+                <p>Não coletamos nome, e-mail, telefone ou qualquer dado que possa identificar você. Sua privacidade é prioridade.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icone">📊</div>
+                <h3>Dashboard em tempo real</h3>
+                <p>Visualize os tipos de violações mais relatadas e ajude a gerar indicadores importantes para conscientização.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icone">📚</div>
+                <h3>Educação Digital</h3>
+                <p>Aprenda sobre seus direitos digitais, como se proteger e onde buscar apoio jurídico ou psicológico.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>
+        <strong>Projeto Extensionista</strong> — Tema Integrador V<br>
+        Direitos Humanos e o Universo Digital | ODS 16 — Paz, Justiça e Instituições Eficazes
+    </p>
+</footer>
+
+</body>
+</html>

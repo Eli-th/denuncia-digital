@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direitos Digitais | Denúncia Digital</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <span>🛡️</span> Denúncia Digital
+        </div>
+        <nav>
+            <a th:href="@{/}">Início</a>
+            <a th:href="@{/denuncia}">Denunciar</a>
+            <a th:href="@{/dashboard}">Dashboard</a>
+            <a th:href="@{/info}">Direitos</a>
+        </nav>
+    </div>
+</header>
+
+<section class="secao">
+    <div class="container">
+        <div class="secao-titulo">
+            <h2>Seus Direitos no Ambiente Digital</h2>
+            <p>Conheça, proteja-se e saiba onde buscar ajuda</p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-icone">🔒</div>
+                <h3>Direito à Privacidade</h3>
+                <p>Seus dados pessoais só podem ser coletados e usados com o seu consentimento (LGPD). Ninguém pode monitorar suas atividades online sem autorização.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icone">🗣️</div>
+                <h3>Liberdade de Expressão</h3>
+                <p>Você tem o direito de se expressar na internet, desde que não pratique discurso de ódio, calúnia ou difamação.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icone">🛡️</div>
+                <h3>Proteção contra Cyberbullying</h3>
+                <p>Intimidação, ameaças e assédio online são crimes. Você pode e deve denunciar.</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 50px;">
+            <div class="card" style="max-width: 800px; margin: 0 auto;">
+                <h3 style="margin-bottom: 16px;">Onde denunciar?</h3>
+                <ul style="padding-left: 20px; color: #475569; line-height: 1.8;">
+                    <li><strong>Safernet</strong> – https://www.safernet.org.br</li>
+                    <li><strong>Delegacia de Crimes Cibernéticos</strong> da sua cidade</li>
+                    <li><strong>Disque 100</strong> (Direitos Humanos)</li>
+                    <li><strong>Ministério Público</strong></li>
+                    <li>Botão de denúncia das próprias plataformas (Instagram, Facebook, TikTok, etc.)</li>
+                </ul>
+
+                <h3 style="margin: 28px 0 12px;">Apoio Psicológico</h3>
+                <p style="color: #475569;">
+                    CVV – <strong>188</strong> (24 horas, gratuito)<br>
+                    Centros de Atenção Psicossocial (CAPS)
+                </p>
+
+                <div style="margin-top: 30px; text-align: center;">
+                    <a th:href="@{/denuncia}" class="botao principal">Fazer uma Denúncia Anônima</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>
+        <strong>Projeto Extensionista</strong> — Tema Integrador V<br>
+        Direitos Humanos e o Universo Digital | ODS 16
+    </p>
+</footer>
+
+</body>
+</html>
